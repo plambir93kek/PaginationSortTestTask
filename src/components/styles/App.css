@@ -1,0 +1,112 @@
+.header {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+.header .search-input {
+  width: 50vw;
+  height: 23px;
+  padding: 5px;
+  border: 2px solid #1976d2;
+  outline: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.table {
+  margin: auto;
+  border: 1px solid grey;
+  border-radius: 4px;
+  border-collapse: collapse;
+}
+.table th {
+  border: 1px solid grey;
+  padding: 5px;
+  cursor: pointer;
+}
+.table td {
+  border: 1px solid grey;
+  padding: 5px;
+}
+.table .todoId {
+  text-align: center;
+}
+.table .head-id:hover {
+  opacity: 0.7;
+}
+.table .head-text:hover {
+  opacity: 0.7;
+}
+
+.pagination {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  gap: 10px;
+}
+.pagination .page {
+  display: flex;
+  border: 2px solid #1976d2;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.pagination .page:hover {
+  opacity: 0.7;
+}
+
+.current {
+  display: flex;
+  border-radius: 50%;
+  border: 2px solid #1976d2;
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #1976d2;
+  color: white;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.loader-container .loader-text {
+  font-size: 24px;
+}
+.loader-container .loader {
+  width: 100px;
+  height: 100px;
+  border: 3px dashed black;
+  -webkit-animation: loading 1s infinite;
+          animation: loading 1s infinite;
+  transition: 1s;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=App.css.map */
